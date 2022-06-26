@@ -3,7 +3,7 @@ import scipy.sparse as sp
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 def get_data():
-    movie_data = pd.read_csv('F:/recommend/datasets/movie_data.csv.zip')
+    movie_data = pd.read_csv('movie_data.csv.zip')
     movie_data['original_title'] = movie_data['original_title'].str.lower()
     return movie_data
 def combine_data(data):
